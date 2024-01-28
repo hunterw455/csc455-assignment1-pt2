@@ -71,8 +71,10 @@ else if(userInput == "4")
     }
     else if( randomAction == 3)
     {
-
-    }else if(randomAction == 4)
+        //  Ouputs half the string
+        Console.WriteLine("Half of your string is: {0}", userString.Substring(0, userString.Length / 2));
+    }
+    else if(randomAction == 4)
     {
 
     }else if(randomAction == 5)
