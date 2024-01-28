@@ -15,7 +15,9 @@ string userInput = Console.ReadLine();
 //  If statements to contain features of the program
 if(userInput == "1")
 {
-
+    //  Displays a random positive integer between 1 and 10
+    Random randomNum = new Random();
+    Console.WriteLine("Here is a random integer number between 1 and 10: {0}",randomNum.Next(1,10));
 }else if(userInput == "2")
 {
 
