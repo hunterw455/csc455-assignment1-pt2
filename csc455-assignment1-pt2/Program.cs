@@ -20,7 +20,10 @@ if(userInput == "1")
     Console.WriteLine("Here is a random integer number between 1 and 10: {0}",randomNum.Next(1,10));
 }else if(userInput == "2")
 {
-
+    //  Outputs today's date in short date string
+    DateTime todayDate = DateTime.Now;
+    string shortDate = todayDate.ToShortDateString();
+    Console.WriteLine("Today's date is {0}.", shortDate);
 }else if(userInput == "3")
 {
 
