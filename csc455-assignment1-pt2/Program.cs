@@ -26,8 +26,21 @@ if(userInput == "1")
     Console.WriteLine("Today's date is {0}.", shortDate);
 }else if(userInput == "3")
 {
-
-}else if(userInput == "4")
+    //  Create a list of 10 dinosaur names, sort, and print one at random
+    //  Source: https://www.thoughtco.com/the-dinosaur-encyclopedia-1091968
+    List<string> dinosaurNames = new List<string>();
+    dinosaurNames.Add("Tyrannosaurus Rex");
+    dinosaurNames.Add("Triceratops");
+    dinosaurNames.Add("Velociraptor");
+    dinosaurNames.Add("Stegosaurus");
+    dinosaurNames.Add("Spinosaurus");
+    dinosaurNames.Add("Archaeopteryx");
+    dinosaurNames.Add("Brachiosaurus");
+    dinosaurNames.Add("Allosaurus");
+    dinosaurNames.Add("Apatosaurus");
+    dinosaurNames.Add("Dilophosaurus");
+}
+else if(userInput == "4")
 {
 
 }
