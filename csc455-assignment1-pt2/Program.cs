@@ -110,10 +110,22 @@ else if(userInput == "4")
         Console.WriteLine("You have {0} word(s) in your string.", words);
     }else if(randomAction == 10)
     {
-
+        //  Checks how many spaces are in the string
+        char[] strArray = userString.ToCharArray();
+        int count = 0;
+        foreach(char c in strArray)
+        {
+            if (char.IsWhiteSpace(c))
+            {
+                count += 1;
+            }
+        }
+        Console.WriteLine("You have {0} spaces in your string.", count);
     }
 }
 else
 {
     Console.WriteLine("Input a valid integer number between 1 and 4.");
 }
+
+return 0;
