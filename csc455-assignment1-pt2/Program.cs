@@ -81,8 +81,11 @@ else if(userInput == "4")
     }
     else if(randomAction == 5)
     {
-
-    }else if(randomAction == 6)
+        //  Replaces any e with _
+        userString = userString.Replace("e", "_");
+        Console.WriteLine("If we replace any letter e with an _, your string will look like: {0}", userString);
+    }
+    else if(randomAction == 6)
     {
 
     }else if(randomAction == 7)
