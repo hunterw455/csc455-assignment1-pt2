@@ -87,12 +87,15 @@ else if(userInput == "4")
     }
     else if(randomAction == 6)
     {
+        //  Outputs the hash code of a string
         Console.WriteLine("The hash code of your string is: {0}", userString.GetHashCode());
     }
     else if(randomAction == 7)
     {
-
-    }else if(randomAction == 8)
+        //  Outputs the lowercase values of the string
+        Console.WriteLine("Your string in all lowercase values is: {0}", userString.ToLower());
+    }
+    else if(randomAction == 8)
     {
 
     }else if(randomAction == 9)
