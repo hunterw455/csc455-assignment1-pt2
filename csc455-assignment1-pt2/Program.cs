@@ -97,8 +97,13 @@ else if(userInput == "4")
     }
     else if(randomAction == 8)
     {
-
-    }else if(randomAction == 9)
+        //  Concatenates two strings
+        Console.WriteLine("Input another string.");
+        string str2 = Console.ReadLine();
+        userString = string.Concat(userString, str2);
+        Console.WriteLine("Your two strings together are: {0}", userString);
+    }
+    else if(randomAction == 9)
     {
 
     }else if(randomAction == 10)
