@@ -87,8 +87,9 @@ else if(userInput == "4")
     }
     else if(randomAction == 6)
     {
-
-    }else if(randomAction == 7)
+        Console.WriteLine("The hash code of your string is: {0}", userString.GetHashCode());
+    }
+    else if(randomAction == 7)
     {
 
     }else if(randomAction == 8)
