@@ -17,7 +17,7 @@ if(userInput == "1")
 {
     //  Displays a random positive integer between 1 and 10
     Random randomNum = new Random();
-    Console.WriteLine("Here is a random integer number between 1 and 10: {0}",randomNum.Next(1,10));
+    Console.WriteLine("Here is a random integer number between 1 and 10: {0}",randomNum.Next(1,11));
 }else if(userInput == "2")
 {
     //  Outputs today's date in short date string
@@ -44,7 +44,7 @@ if(userInput == "1")
     dinosaurNames = dinosaurNames.OrderBy(p => p).ToList();
 
     Random randomNum = new Random();
-    int randomDino = randomNum.Next(0,9);
+    int randomDino = randomNum.Next(0,10);
 
     Console.WriteLine("Here is a random dinosaur name: {0}", dinosaurNames[randomDino]);
 }
@@ -54,12 +54,17 @@ else if(userInput == "4")
     string userString = Console.ReadLine();
 
     Random randomNum = new Random();
-    int randomAction = randomNum.Next(1,10);
+    int randomAction = randomNum.Next(1,11);
 
     //  If statements to perform a random action on a string the user inputs
-    if(randomAction == 1){
-
-    }else if(randomAction == 2)
+    if (randomAction == 1){
+        //  Reverses the string
+        char[] reverseArray = userString.ToCharArray();
+        Array.Reverse(reverseArray);
+        string reversedString = new string(reverseArray);
+        Console.Write("Your string in reverse is: {0}", reversedString);
+    }
+    else if(randomAction == 2)
     {
 
     }else if( randomAction == 3)
