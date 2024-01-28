@@ -105,7 +105,9 @@ else if(userInput == "4")
     }
     else if(randomAction == 9)
     {
-
+        //  Checks how many words are in the string provided
+        int words = Regex.Matches(userString, @"\b\w+\b").Count;
+        Console.WriteLine("You have {0} word(s) in your string.", words);
     }else if(randomAction == 10)
     {
 
