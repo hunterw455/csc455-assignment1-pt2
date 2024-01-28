@@ -39,6 +39,14 @@ if(userInput == "1")
     dinosaurNames.Add("Allosaurus");
     dinosaurNames.Add("Apatosaurus");
     dinosaurNames.Add("Dilophosaurus");
+
+    //Orders the list by name
+    dinosaurNames = dinosaurNames.OrderBy(p => p).ToList();
+
+    Random randomNum = new Random();
+    int randomDino = randomNum.Next(0,9);
+
+    Console.WriteLine("Here is a random dinosaur name: {0}", dinosaurNames[randomDino]);
 }
 else if(userInput == "4")
 {
