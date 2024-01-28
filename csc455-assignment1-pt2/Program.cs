@@ -50,7 +50,43 @@ if(userInput == "1")
 }
 else if(userInput == "4")
 {
+    Console.WriteLine("Input a string of your choice.");
+    string userString = Console.ReadLine();
 
+    Random randomNum = new Random();
+    int randomAction = randomNum.Next(1,10);
+
+    //  If statements to perform a random action on a string the user inputs
+    if(randomAction == 1){
+
+    }else if(randomAction == 2)
+    {
+
+    }else if( randomAction == 3)
+    {
+
+    }else if(randomAction == 4)
+    {
+
+    }else if(randomAction == 5)
+    {
+
+    }else if(randomAction == 6)
+    {
+
+    }else if(randomAction == 7)
+    {
+
+    }else if(randomAction == 8)
+    {
+
+    }else if(randomAction == 9)
+    {
+
+    }else if(randomAction == 10)
+    {
+
+    }
 }
 else
 {
