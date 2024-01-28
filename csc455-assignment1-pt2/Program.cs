@@ -66,8 +66,10 @@ else if(userInput == "4")
     }
     else if(randomAction == 2)
     {
-
-    }else if( randomAction == 3)
+        //  Outputs length of string
+        Console.Write("The length of your string is: {0}", userString.Length);
+    }
+    else if( randomAction == 3)
     {
 
     }else if(randomAction == 4)
