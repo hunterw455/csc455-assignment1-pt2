@@ -76,8 +76,10 @@ else if(userInput == "4")
     }
     else if(randomAction == 4)
     {
-
-    }else if(randomAction == 5)
+        //  Outputs the uppercase values of the string
+        Console.Write("Your string in all uppercase values is: {0}", userString.ToUpper());
+    }
+    else if(randomAction == 5)
     {
 
     }else if(randomAction == 6)
